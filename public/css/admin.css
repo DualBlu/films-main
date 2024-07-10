@@ -1,0 +1,27 @@
+/* Add your custom styles here */
+body {
+    background-color: antiquewhite;
+}
+
+.hero-section {
+    background-image: url('https://cdn.pixabay.com/photo/2021/08/17/19/56/projector-6554063_960_720.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+}
+.footer-section {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+/* Aggiungi questa parte nel tuo foglio di stile CSS */
+.film-card {
+    height: 400px; /* Altezza fissa del riquadro delle immagini */
+}
+
+.film-poster-img {
+    object-fit: cover; /* Adatta l'immagine al riquadro senza distorcerla */
+    height: 100%; /* Occupa l'intera altezza del riquadro */
+    width: 100%; /* Occupa l'intera larghezza del riquadro */
+}
