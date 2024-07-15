@@ -31,7 +31,7 @@
                             <form action="{{ route('directors.destroy', $director->id) }}" method="POST" style="display: inline;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Sei sicura di voler eliminare questo regista?')">Elimina</button>
+                                <button type="submit" class="btn btn-secondary btn-sm" onclick="return confirm('Sei sicura di voler eliminare questo regista?')">Elimina</button>
                             </form>
                         </td>
                     </tr>

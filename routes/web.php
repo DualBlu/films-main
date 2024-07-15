@@ -33,9 +33,9 @@ Route::get('/contact', function () {
 
 Route::post('/send-email', [EmailController::class, 'sendEmail'])->name('sendEmail');
 
-Route::get('admin/dashboard', function () {
-    return view('admin.dashboard');
-})->name('admin.dashboard');
+Route::get('/gestione', function () {
+    return view('admin.gestione');
+})->name('admin.gestione');
 
 
 Route::get('/films', [FilmController::class, 'index'])->name('films.index');

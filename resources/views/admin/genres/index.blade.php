@@ -29,7 +29,7 @@
                             <form action="{{ route('genres.destroy', $genre->id) }}" method="POST" style="display: inline;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Sei sicura di voler eliminare questo genere?')">Elimina</button>
+                                <button type="submit" class="btn btn-secondary btn-sm" onclick="return confirm('Sei sicura di voler eliminare questo genere?')">Elimina</button>
                             </form>
                         </td>
                     </tr>

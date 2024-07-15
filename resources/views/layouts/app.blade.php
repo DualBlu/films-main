@@ -28,14 +28,13 @@
                         <a class="nav-link {{Request::routeIs('home') ? 'active' : ''}}" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{Request::routeIs('admin.dashboard') ? 'active' : ''}}" href="{{ route('admin.dashboard') }}">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link {{Request::routeIs('email') ? 'active' : ''}}" href="{{ route('email') }}">Contatti</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{Request::routeIs('admin.gestione') ? 'active' : ''}}" href="{{ route('admin.gestione') }}">Gestione</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Gestione
+                        <a class="nav-link dropdown-toggle" href="{{ route('admin.gestione') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('films.index') }}">Film</a>
